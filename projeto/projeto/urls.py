@@ -4,5 +4,7 @@ urlpatterns = patterns('',
    url(r'^$', 'produto.views.index'),
    url(r'^validar/$', 'produto.views.validar'),
    url(r'^validar/$', 'produto.views.validar'),
+   url(r'^validar/$', 'produto.views.validar'),
+   url(r'^validar/$', 'produto.views.validar'),
 
 )
