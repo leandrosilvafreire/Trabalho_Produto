@@ -3,3 +3,4 @@ from produto.forms import ProdutoForm
 
 def index(request):
     form = ProdutoForm()
+    return render(request, 'index.html',{'form':form})
