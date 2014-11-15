@@ -12,6 +12,10 @@ def validar(request):
         if form.is_valid():
             produto = Produto(**form.cleaned_data)
             produto.save()
+            
+            produto = Produto.objects.all()
+            
+            return render(request, 'validar.html',{'form':form, 'produto':produto})
         
         
         
