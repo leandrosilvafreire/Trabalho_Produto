@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from produto.forms import ProdutoForm
+from produto.models import Produto 
 
 def index(request):
     form = ProdutoForm()
