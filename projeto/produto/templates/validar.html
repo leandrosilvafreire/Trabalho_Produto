@@ -7,3 +7,7 @@ FORM:<br/>
 {{ form.telefone.label }} {{ form.telefone.value }}<br/>
 <br/>
 {{ form.produto }} <br/><br/>
+
+{% for produto in produto %}
+- {{produto.produto}} {{produto.fornecedor}} {{produto.email}} {{produto.telefone}}<br/>
+{% endfor %}
