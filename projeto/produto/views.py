@@ -2,9 +2,9 @@ from django.shortcuts import render
 from produto.forms import ProdutoForm
 from produto.models import Produto 
 
-def index(request):
+def cadastro(request):
     form = ProdutoForm()
-    return render(request, 'index.html',{'form':form})
+    return render(request, 'cadastro.html',{'form':form})
 
 def validar(request):
     if request.method == 'POST':
