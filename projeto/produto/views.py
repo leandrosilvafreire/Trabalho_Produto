@@ -2,6 +2,11 @@ from django.shortcuts import render
 from produto.forms import ProdutoForm
 from produto.models import Produto 
 
+
+def index(request):
+    dados = ('Cadastro de Produtos, Fornecedores, E-mail e Telefone')
+    return render(request, 'index.html',{'dados':dados,})
+
 def cadastro(request):
     form = ProdutoForm()
     return render(request, 'cadastro.html',{'form':form})

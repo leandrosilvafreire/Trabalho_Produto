@@ -1,0 +1,32 @@
+{% load i18n %}
+<h2><center>Cadastro de Produtos<h2/>
+    
+    <br/>
+    <br/>
+    
+    <a href="/cadastro/">Clique para fazer o cadastro de Produto</a>
+    
+       <br/>
+       <br/>
+       <br/>
+    <a href="#" onclick="document.setLangEnglish.submit();return false;">English</a>
+<form name="setLangEnglish" action="/i18n/setlang/" method="POST">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="/"/>
+    <input type="hidden" name="language" value="en"/>   
+</form>
+
+<a href="#" onclick="document.setLangPortugues.submit();return false;">Português</a>
+<form name="setLangPortugues" action="/i18n/setlang/" method="POST">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="/"/>
+    <input type="hidden" name="language" value="pt-br"/>   
+</form>
+
+<br/>
+
+<br/>
+Tradução vinda do Django: {{ dados }}
+<br/>
+    
+    
