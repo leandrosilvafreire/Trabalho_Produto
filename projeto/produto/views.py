@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from produto.forms import ProdutoForm
-from produto.models import Produto 
+from produto.models import Produto
+from django.utils.translation import ugettext_lazy as _
 
 
 def index(request):
