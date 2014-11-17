@@ -1,6 +1,6 @@
-Ok! Validado!<br/>
+Ok! Validado!<br/><br/>
 
-FORM:<br/>
+FORM:<br/><br/>
 {{ form.produto.label }} {{ form.produto.value }}<br/>
 {{ form.fornecedor.label }} {{ form.fornecedor.value }}<br/>
 {{ form.email.label }} {{ form.email.value }}<br/>
@@ -9,5 +9,5 @@ FORM:<br/>
 {{ form.produto }} <br/><br/>
 
 {% for produto in produto %}
-- {{produto.produto}} {{produto.fornecedor}} {{produto.email}} {{produto.telefone}}<br/>
+- {{produto.produto}}   {{produto.fornecedor}}   {{produto.email}}   {{produto.telefone}}<br/>
 {% endfor %}
