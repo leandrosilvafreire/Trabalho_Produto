@@ -1,16 +1,16 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from produto.forms import ProdutoForm
 from produto.models import Produto
 from django.utils.translation import ugettext_lazy as _
 
 
 def index(request):
-    dados = ('Cadastro de Produtos, Fornecedores, E-mail e Telefone')
-    return render(request, 'index.html',{'dados':dados,})
+    dados = _('Cadastro de Produtos, Fornecedores, Email e Telefone')
+    return render(request, 'index.html', {'dados':dados,})
 
 def cadastro(request):
     form = ProdutoForm()
-    return render(request, 'cadastro.html',{'form':form})
+    return render(request, 'cadastro.html', {'form':form})
 
 def validar(request):
     if request.method == 'POST':
