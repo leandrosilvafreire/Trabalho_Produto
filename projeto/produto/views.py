@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 
 
 def index(request):
-    dados = _('Cadastro de Produtos, Fornecedores, Email e Telefone')
+    dados = _('Cadastro de Produtos, Fornecedores, E-mail e Telefone')
     return render(request, 'index.html', {'dados':dados,})
 
 def cadastro(request):
