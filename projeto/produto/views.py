@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponseRedirect
 from produto.forms import ProdutoForm
 from produto.models import Produto
 from django.utils.translation import ugettext_lazy as _
-
+#teste
 
 def index(request):
     dados = _('Cadastro de Produtos, Fornecedores, E-mail e Telefone')
