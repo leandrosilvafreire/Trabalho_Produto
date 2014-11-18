@@ -18,13 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: produto/views.py:8
-msgid "Cadastro de Produtos, Fornecedores, Email e Telefone"
-msgstr ""
+msgid "Cadastro de Produtos, Fornecedores, E-mail e Telefone"
+msgstr "Registration of Products, Suppliers, E-mail and Phone"
 
 #: produto/templates/index.html:26
 msgid "Cadastro"
-msgstr ""
+msgstr "Cadastre"
 
 #: produto/templates/index.html:28
 msgid "Conteúdo!"
-msgstr ""
+msgstr "Content!"
