@@ -1,4 +1,5 @@
 <html>
+<<<<<<< HEAD
 <body>    
 <center>Cadastro de Produtos<br/><br/><br/>
 <form action="/validar/" method="POST">
@@ -9,4 +10,16 @@
 <form/> 
 <body/>    
 <html/>    
+=======
+    <body>    
+        <center>Cadastro de Produtos<br/><br/><br/>
+            <form action="/validar/" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Enviar"/>
+                <button href="/index.html/">Voltar</button>
+                <form/> 
+                <body/>    
+                <html/>    
+>>>>>>> b3bce85639d1dd43fa17fd0dbb238676a51d75b5
     
