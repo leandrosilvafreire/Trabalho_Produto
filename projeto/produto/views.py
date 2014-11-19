@@ -3,7 +3,7 @@ from produto.forms import ProdutoForm
 from produto.models import Produto
 from django.utils.translation import ugettext_lazy as _
 
-#teste2
+#testando
 
 def index(request):
     dados = _('Cadastro de Produtos, Fornecedores, E-mail e Telefone')
